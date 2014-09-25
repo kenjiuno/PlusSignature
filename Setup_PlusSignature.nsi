@@ -9,7 +9,7 @@
 
 !define APP "PlusSignature"
 !define COM "HIRAOKA HYPERS TOOLS, Inc."
-!define VER "0.1"
+!define VER "0.2"
 
 !define TTL "${APP} for Windows Live Mail 2012"
 

@@ -51,7 +51,7 @@ namespace PlusSignature {
                     for (int x = 0; x < keys.Count; x++) {
                         if (x != 0)
                             wr.Write("&");
-                        wr.Write("{0}={1}", HttpUtility.UrlEncode(keys[x], e), HttpUtility.UrlEncode(vals[x], e));
+                        wr.Write("{0}={1}", HttpUtility.UrlEncode(keys[x], e), HttpUtility.UrlEncode(vals[x], e).Replace("+", "%2B"));
                     }
                     b.Query = "" + wr;
                     b.Port = -1;
