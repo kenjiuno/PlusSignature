@@ -16,7 +16,7 @@ namespace PlusSignature {
                 if (a.StartsWith("/mailurl:")) {
                     UriBuilder b = new UriBuilder(a.Substring(9));
                     Encoding e = Encoding.Default;
-                    NameValueCollection nvc = HttpUtility.ParseQueryString(b.Query.TrimStart('?'), e);
+                    NameValueCollection nvc = HttpUtility.ParseQueryString(b.Query.TrimStart('?'));
                     List<string> keys = new List<string>();
                     List<string> vals = new List<string>();
                     for (int x = 0; x < nvc.Count; x++) {
